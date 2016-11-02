@@ -1,0 +1,49 @@
+<!doctype = html>
+<html>
+<head>
+<title>Base Converter</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<h1>Base Converter</h1>
+<h2>By Darien Campbell</h2>
+<div id="a"><p class="desc">Input #:</p><input id="input"></input></div>
+<div id="b"><p class="desc">Base:</p><input type=number id="base"></input></div>
+<div id="c"><p class="desc">New Base:</p><input type=number id="newbase"></input><button onclick="document.getElementById('out').innerHTML=convert()">Convert</button></div>
+<p id="out">
+Answer will appear here.
+</p>
+</body>
+<script>
+var digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+function convert() {
+	var inp = document.getElementById("input").value;
+	var base = document.getElementById("base").value;
+	var newbase = document.getElementById("newbase").value;
+	if (base < 2 || base > 64)
+	{
+		return "Base must be between 2 and 64!";
+	}
+	else if (newbase < 2 || newbase > 64)
+	{
+		return "The new base must be between 2 and 64!";
+	}
+	else
+	{
+		var middle = 0;
+		for (var i = 1; i <= inp.length; i++) {
+			middle = (middle*base)+digits.search(inp.charAt(i-1));
+		}
+		var out = "";
+		for (var c = 1; c <= middle; c=c*newbase) {
+			out = digits.charAt((middle%(c*newbase)/c))+out;
+		}
+		if (out.length == 0) {
+			out = "0";
+		}
+		return out;
+	}
+}
+</script>
+</html>
