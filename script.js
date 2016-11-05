@@ -12,3 +12,4 @@ function resize() {
 	}
 	console.log('hi');
 }
+resize();
