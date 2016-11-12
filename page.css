@@ -92,4 +92,5 @@ iframe.view {
 	width: 500px;
 	border: none;
 	height: 279;
+	volume: silent;
 }
