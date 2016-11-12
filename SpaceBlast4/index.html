@@ -1,0 +1,37 @@
+<!doctype = html>
+<html>
+<head>
+<title>Space Blast 4</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onresize="resize()" onload="load()">
+<style>
+canvas {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #000000;s
+	cursor: "none";
+}
+body {
+	background-color: gray;
+	margin: 0 0;
+}
+div {
+	margin: auto;
+	text-align: center;
+}
+</style>
+<audio autoplay loop id="audio"><source id="music" src="music.mp3" type="audio/mp3"></audio>
+<audio autoplay id="sfxa"><source id="sfx" src="" type="audio/wav"></audio>
+<img id="title" src="title.png" width="0" height="0" hidden></img>
+<img id="cursor" src="cursor.png" width = "0" height="0" hidden></img>
+<img id="bg" src="bg3.jpg" width = "0" height="0" hidden></img>
+<div>
+<canvas id="game" width=1920 height=1080 onmousedown="mouseDown = true; if (document.webkitFullscreenElement == null) {canvas.webkitRequestFullscreen()}" onmouseup = "mouseDown = false;">
+</div>
+</canvas>
+<script src="script.js">
+</script>
+</body>
+</html>
