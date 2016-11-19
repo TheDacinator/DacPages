@@ -10,5 +10,4 @@ function resize() {
 	} else {
 		document.getElementById("boxes").style["max-width"] = 1106;
 	}
-	console.log('hi');
 }
