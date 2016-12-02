@@ -22,6 +22,10 @@ div.info {
 	margin-top: 96px;
 	display: inline-block;
 	vertical-align: top;
+	box-shadow: none;
+}
+div.info:hover {
+	box-shadow: 0 0 25px black;	
 }
 p.info {
 	margin-top: 0;
