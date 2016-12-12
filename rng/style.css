@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	background-color: #44B3C2;
+}
+#output {
+	margin: auto;
+	width: 60vw;
+	text-align: center;
+	background-color: #F2EDD8;
+	color: #5D4C46;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 5vw;
+	margin-top: 2vw;
+	border: 0.7vw solid #E45641;
+	font-weight: bold;
+}
+#arrow {
+	text-align: center;
+	font-size: 12vw;
+	color: #5D4C46;
+	display: block;
+	width: 16vw;
+}
+#footer {
+	position: absolute;
+	bottom: 4vw;
+	width: 100%;
+}
+#range {
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+.inp {
+	text-align: center;
+	background-color: #F2EDD8;
+	color: #5D4C46;
+	width: 40vw;
+	display: block;
+	font-size: 6vw;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border: 0.7vw solid #E45641;
+	outline-width: 0;
+	padding: 0;
+	transition: border 0.1s;
+}
+#gen {
+	margin: auto;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border: 0.7vw solid #E45641;
+	background-color: #F2EDD8;
+	color: #5D4C46;
+	text-align: center;
+	font-size: 4vw;
+	outline-width: 0;
+	margin-top: 2vw;
+	width: 48vw;
+	height: 8vw;
+	cursor: pointer;
+	transition: border 0.1s;
+}
+#gen:active {
+	background-color: #5D4C46;
+	color: #F2EDD8;
+}
+#gen:hover,.inp:focus {
+	border: 0.7vw solid #5D4C46;
+}
