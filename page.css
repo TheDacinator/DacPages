@@ -23,7 +23,7 @@ div.info {
 	display: inline-block;
 	vertical-align: top;
 	box-shadow: none;
-	transition: box-shadow 0.5s;
+	transition: 0.5s;
 }
 div.info:hover {
 	box-shadow: 0 0 25px black;
