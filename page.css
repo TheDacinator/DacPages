@@ -26,7 +26,8 @@ div.info {
 	transition: box-shadow 0.5s;
 }
 div.info:hover {
-	box-shadow: 0 0 25px black;	
+	box-shadow: 0 0 25px black;
+	transform: scale(1.1,1.1);
 }
 p.info {
 	margin-top: 0;
